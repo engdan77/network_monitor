@@ -1,0 +1,20 @@
+[project]
+name = "network-monitor"
+version = "2026.1.1"
+description = "Very simple application for monitoring network interfaces"
+readme = "README.md"
+authors = [
+    { name = "Daniel Engvall", email = "daniel@engvalls.eu" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "cyclopts>=4.5.0",
+    "psutil>=7.2.1",
+]
+
+[project.scripts]
+network-monitor = "network_monitor.app:main"
+
+[build-system]
+requires = ["uv_build>=0.9.21,<0.10.0"]
+build-backend = "uv_build"
