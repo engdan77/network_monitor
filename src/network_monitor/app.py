@@ -30,7 +30,7 @@ def monitor_network_rate(interval=1):
 
             os.system('cls' if os.name == 'nt' else 'clear')
             print("-" * 90)
-            print(f"{'Interface':<15} | {'DL Rate (Mbit/s)':<15} | {'UL Rate (Mbit/s)':<15} | {'MB downloaded':<15} | {'MB uploaded':<15}")
+            print(f"{'Interface':<20} | {'DL Rate (Mbit/s)':<20} | {'UL Rate (Mbit/s)':<20} | {'MB downloaded':<20} | {'MB uploaded':<20}")
             print("-" * 90)
 
             for idx, interface in enumerate(new_stats):
