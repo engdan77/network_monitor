@@ -48,7 +48,7 @@ def monitor_network_rate(interval=1):
                     downloaded_megabytes = (new_stats[interface].bytes_recv - dl_at_start[interface]) / MB
                     uploaded_megabytes = (new_stats[interface].bytes_sent - ul_at_start[interface]) / MB
 
-                    print(f"{interface:<15} | {download_rate:<15.2f} | {upload_rate:<15.2f} | {downloaded_megabytes:<15.2f} | {uploaded_megabytes:<15.2f}")
+                    print(f"{interface:<20} | {download_rate:<20.2f} | {upload_rate:<20.2f} | {downloaded_megabytes:<20.2f} | {uploaded_megabytes:<20.2f}")
 
     except KeyboardInterrupt:
         print("\nMonitoring stopped.")
