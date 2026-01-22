@@ -29,9 +29,9 @@ def monitor_network_rate(interval=1):
             new_stats = psutil.net_io_counters(pernic=True)
 
             os.system('cls' if os.name == 'nt' else 'clear')
-            print("-" * 90)
+            print("-" * 110)
             print(f"{'Interface':<20} | {'DL Rate (Mbit/s)':<20} | {'UL Rate (Mbit/s)':<20} | {'MB downloaded':<20} | {'MB uploaded':<20}")
-            print("-" * 90)
+            print("-" * 110)
 
             for idx, interface in enumerate(new_stats):
                 if interface in old_stats:
